@@ -64,12 +64,12 @@ Here is an example to demonstrate how the EEPROMLivingAgeExtension works:
 //=================================================================================================================
 int EEPROMADRESS = 0;             // Start addresses for data.     0 -> 1023.
 int EEPROMADRESS_LAST = 100;      // End addresses for data.       0 -> 1023. 
-int DATASIZEWITHINEEPROM = 7;     // Number of Data inn the Arrays[]...   0 -> 1023++..
-long DATAWITHINEEPROM[7] = {0};   // Size of Data Array[]...       0 -> 1024. (LONG="(+-)2.147.483.648").
+int DATASIZEWITHINEEPROM = 10;    // Number of Data inn the Arrays[]...   0 -> 1023++..
+long DATAWITHINEEPROM[10] = {0};  // Size of Data Array[]...       0 -> 1024. (LONG="(+-)2.147.483.648").
 long LIFECOUNTDOWN = 0;           // Return the remaining number of Life, for the EEPROM cells!..
 //=================================================================================================================
 
-int DATA_SIZE_WITHIN_EEPROM = 7;          // Size of Data in Array[]...    0 -> 1023.
+int DATA_SIZE_WITHIN_EEPROM = 10;         // Size of Data in Array[]...    0 -> 1023.
 int i=0;
 
 void setup() {
