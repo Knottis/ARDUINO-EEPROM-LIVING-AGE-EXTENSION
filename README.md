@@ -43,9 +43,9 @@ EEPROMLivingAgeExtension.EEPROMLIVINGAGELIFECOUNTDOWN( EEPROMADRESS, EEPROMADRES
 EEPROMADRESS = 0;             // Start addresses for the data. 0 -> 1023.
 EEPROMADRESS_LAST = 1023;     // End addresses for data.       0 -> 1023.
 
-DATAWITHINEEPROM[7];          // Size of Data Arrays[]...      0 -> 1023. (Datatype Long or Integer => Library)
+DATAWITHINEEPROM[10];         // Size of Data Arrays[]...      0 -> 1023. (Datatype Long or Integer => Library)
 
-DATASIZEWITHINEEPROM = 7;     // Number of Data in the Array[]...  0 -> 1023.
+DATASIZEWITHINEEPROM = 10;    // Number of Data in the Array[]...  0 -> 1023.
 
 LIFECOUNTDOWN = 0;            // Return the remaining number of Life, for the EEPROM cells!.. MAX = 12.800.000
 ```
