@@ -185,8 +185,6 @@ EEPROM LIFECOUNTDOWN = 315624
 --- EEPROMLIVINGAGEINTWRITE END..---
 Reset the Arrays....
 --- EEPROMLIVINGAGEINTREAD.. -------
-EEPROM_LENGTH = 1013
-0
 ------------------------------------
 0 = 12345
 1 = 12345
