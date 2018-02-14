@@ -109,12 +109,12 @@ Serial.println("---------------------------------------------------");
 
 
 
-Serial.println("--- EEPROMLIVINGAGEWRITE..-------");
+Serial.println("--- EEPROM-LIVING-AGE-WRITE..-------");
 EEPROMADRESS = 0;                         // Start addresses for data.     0 -> 1023.
 EEPROMADRESS_LAST = 100;                  // End addresses for data.       0 -> 1023
 i = EEPROMLivingAgeExtension.EEPROMLIVINGAGEWRITE( EEPROMADRESS, EEPROMADRESS_LAST, DATASIZEWITHINEEPROM, DATAWITHINEEPROM );
 Serial.println(i);                        // 0= OK,  1= ERROR!...
-Serial.println("--- EEPROMLIVINGAGEWRITE END..---");
+Serial.println("--- EEPROM-LIVING-AGE-WRITE END..---");
 
 
 
@@ -125,7 +125,7 @@ for(i=0; i < DATA_SIZE_WITHIN_EEPROM; i++){ // Reset the Arrays....
 
 
 
-Serial.println("--- EEPROMLIVINGAGEREAD.. -------");
+Serial.println("--- EEPROM-LIVING-AGE-READ.. -------");
 EEPROMADRESS = 0;                         // Start addresses for data.     0 -> 1023.
 EEPROMADRESS_LAST = 100;                  // End addresses for data.       0 -> 1023. 
 i = EEPROMLivingAgeExtension.EEPROMLIVINGAGEREAD( EEPROMADRESS, EEPROMADRESS_LAST, DATASIZEWITHINEEPROM, DATAWITHINEEPROM );
@@ -135,18 +135,18 @@ for(i=0; i < (sizeof(DATAWITHINEEPROM)/4); i++){
  Serial.print(" = ");
  Serial.println(DATAWITHINEEPROM[i]); 
 }
-Serial.println("--- EEPROMLIVINGAGESREAD END -----");
+Serial.println("--- EEPROM-LIVING-AGE-READ END -----");
 
 
 
-Serial.println("--- EEPROMLIVINGAGELIFECOUNTDOWN.. ----");
+Serial.println("--- EEPROM-LIVING-AGE-LIFE-COUNTDOWN.. ----");
 EEPROMADRESS = 0;                         // Start addresses for data.     0 -> 1023.
 EEPROMADRESS_LAST = 100;                  // End addresses for data.       0 -> 1023. 
 i = EEPROMLivingAgeExtension.EEPROMLIVINGAGELIFECOUNTDOWN( EEPROMADRESS, EEPROMADRESS_LAST, DATASIZEWITHINEEPROM, LIFECOUNTDOWN );
 Serial.print("EEPROM LIFECOUNTDOWN = "); 
 Serial.println(LIFECOUNTDOWN);            // LIFECOUNTDOWN
 Serial.println(i);                        // 0= OK,  1= ERROR!...
-Serial.println("--- EEPROMLIVINGAGELIFECOUNTDOWN END --");
+Serial.println("--- EEPROM-LIVING-AGE-LIFE-COUNTDOWN END --");
 
 
 
