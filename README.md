@@ -75,7 +75,8 @@ LIFECOUNTDOWN = 0;            // Return the remaining number of Life, for the EE
 ![alt text](https://github.com/Knottis/ARDUINO-EEPROM-LIVING-AGE-EXTENSION/blob/master/EEPROMLivingAgeExtension.jpg "EEPROMLivingAgeExtension")
 
 
-
+<sub>
+  
 ```
 include <EEPROMLivingAgeExtension.h>
 
@@ -153,9 +154,12 @@ Serial.println("--- EEPROM-LIVING-AGE-LIFE-COUNTDOWN END --");
 while(1);  // END
 }
 ```
+</sub>
 
 #### Output for the Datatype: Long
 
+<sub>
+
 ```
 ------- Start.. initialization data Array[]... ----
 0 = 1234567890
@@ -166,11 +170,14 @@ while(1);  // END
 5 = 1234567890
 6 = 1234567890
 ---------------------------------------------------
---- EEPROMLIVINGAGEWRITE..-------
+
+--- EEPROM-LIVING-AGE-WRITE..-------
 0
---- EEPROMLIVINGAGEWRITE END..---
+--- EEPROM-LIVING-AGE-WRITE END..---
+
 Reset the Arrays....
---- EEPROMLIVINGAGEREAD.. -------
+
+--- EEPROM-LIVING-AGE-READ.. -------
 0
 0 = 1234567890
 1 = 1234567890
@@ -179,15 +186,20 @@ Reset the Arrays....
 4 = 1234567890
 5 = 1234567890
 6 = 1234567890
---- EEPROMLIVINGAGESREAD END -----
---- EEPROMLIVINGAGELIFECOUNTDOWN.. ----
+--- EEPROM-LIVING-AGE-SREAD END -----
+
+--- EEPROM-LIVING-AGE-LIFE-COUNTDOWN.. ----
 EEPROM LIFECOUNTDOWN = 315624
 0
---- EEPROMLIVINGAGELIFECOUNTDOWN END -- 
+--- EEPROM-LIVING-AGE-LIFE-COUNTDOWN END -- 
 ```
 
+</sub>
 
 #### Output for the Datatype: Integer
+
+<sub>
+  
 ```
 ------- Start.. initialization data Array[]... ----
 0 = 12345
@@ -198,12 +210,15 @@ EEPROM LIFECOUNTDOWN = 315624
 5 = 12345
 6 = 12345
 ---------------------------------------------------
---- EEPROMLIVINGAGEINTWRITE..-------
+
+--- EEPROM-LIVING-AGE-INT-WRITE..-------
 0
---- EEPROMLIVINGAGEINTWRITE END..---
+--- EEPROM-LIVING-AGE-INT-WRITE END..---
+
 Reset the Arrays....
---- EEPROMLIVINGAGEINTREAD.. -------
-------------------------------------
+
+--- EEPROM-LIVING-AGE-INT-READ.. -------
+0
 0 = 12345
 1 = 12345
 2 = 12345
@@ -211,12 +226,15 @@ Reset the Arrays....
 4 = 12345
 5 = 12345
 6 = 12345
---- EEPROMLIVINGAGESINTREAD END -----
---- EEPROMLIVINGAGEINTLIFECOUNTDOWN.. ----
+--- EEPROM-LIVING-AGE-INT-READ END -----
+
+--- EEPROM-LIVING-AGE-INT-LIFE-COUNTDOWN.. ----
 EEPROM LIFECOUNTDOWN = 561110
 0
---- EEPROMLIVINGAGEINTLIFECOUNTDOWN END -- 
+--- EEPROM-LIVING-AGE-INT-LIFE-COUNTDOWN END -- 
 ```
+
+</sub>
 
 
 # Copyright (c) 2018, Knottis
